@@ -1,0 +1,51 @@
+{
+  "pages": [
+ 
+    "pages/homepage/homepage",
+    "pages/mine/mine",
+    "pages/fastuse/fastuse",
+    "pages/news_details/news_details",
+    "pages/news_list/news_list",
+    "pages/addmeals/addmeals",
+    "pages/fansetting/fansetting",
+    "pages/lntu/lntu",
+    "pages/about/about",
+    "pages/fantime/fantime",
+    "pages/fanlogs/fanlogs",
+    "pages/card/card"
+  ],
+  "requiredBackgroundModes": ["audio", "location"],
+  "permission": {
+    "scope.userLocation": {
+      "desc": "你的位置信息将用于小程序位置接口的效果展示" 
+    }
+  },
+  "tabBar": {
+    "list": [
+      {
+        "text": "首页",
+        "pagePath": "pages/homepage/homepage",
+        "iconPath": "images/homepage.png",
+        "selectedIconPath": "images/homepage.png"
+      },
+      {
+        "text": "我的",
+        "pagePath": "pages/mine/mine",
+        "iconPath": "images/mine.png",
+        "selectedIconPath": "images/mine.png"
+      }
+  
+    ]
+  },
+  
+  "window": {
+    "backgroundTextStyle": "dark",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "Weixin",
+    "navigationBarTextStyle": "black",
+    "enablePullDownRefresh": true
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json" ,
+  "lazyCodeLoading": "requiredComponents"
+}
