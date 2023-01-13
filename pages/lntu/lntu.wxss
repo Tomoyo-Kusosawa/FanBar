@@ -1,0 +1,101 @@
+/* pages/Second/Second.wxss */
+page{
+  background-color: rgb(252, 252, 252)
+ }
+ .userinfo{ 
+  flex-direction: column; 
+  align-items: center; 
+  margin-top: 70px; 
+  display: flex; 
+  }
+ .namel{ 
+  margin-top: 0px;  
+ }
+ .userinfo-avatar{   
+  font-weight:620;   
+  font-size: 60rpx;  
+    }
+ .name{ 
+  margin-top: 200rpx; 
+   border: 2px solid #405f80;
+   width:400rpx; 
+   height:100rpx;  
+   border-radius:5px; 
+   text-align:center;  
+    }
+ .gu{ 
+  font-size: 50rpx;
+  font-weight:620;              /*字体粗细*/ 
+  line-height: 100rpx; 
+  color: #405f80; 
+    }
+
+
+
+    .countdown .item {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 120rpx;
+      width: 90%;
+      margin: 0 5%;
+      border-bottom: 2rpx solid #eee;
+    }
+    
+    .countdown .item .txt-time {
+      background-color: #6EBEC7;
+      color: #fff;
+      border-radius: 10rpx;
+      font-size: 28rpx;
+      margin: 0 4rpx;
+      font-weight: bold;
+      height: 42rpx;
+      width: 66rpx;
+      line-height: 42rpx;
+      text-align: center;
+    }
+    
+    .bt_connect{
+      width: 200rpx !important;
+      margin-left: 20rpx !important;
+      margin-right: 20rpx !important;
+      height: 70rpx;
+      color: #6699FF;
+      border: 3rpx solid #6699FF;
+      border-radius: 80rpx !important;
+      font-size: 35rpx !important;
+      margin-top: 40rpx;
+      display: flex; 
+     justify-content: center;
+      align-items: center;
+      
+    }
+    /* 按钮的点击效果 */
+    .hover-class-1 {
+      top: 3rpx;
+      background-color: #e7f5ff;
+    }
+.title{
+  font-family:monospace;
+  color:seagreen;
+  font-weight: bold;
+  margin-left: 30rpx ;
+}
+
+.adContainer {
+  width: 100%;
+}
+
+
+.bt_2{
+  margin-top: 40rpx;
+  background: linear-gradient(to right, #ead6ee, #a0f1ea); 
+  color:rgb(167, 167, 167);
+}
+.choose{
+  text-align: center;
+  border-bottom: 2rpx solid #eee;
+}
+.choose_text{
+  color: #2e2e2e;
+}

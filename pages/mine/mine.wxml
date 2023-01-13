@@ -1,0 +1,41 @@
+<import src="../template/template" />
+<view class="container">
+  <!-- 背景图片区域 -->
+  <view class="bgcImage">
+    <!-- 用户信息区域 -->
+    <view class="userInfo">
+      <!-- 头像 -->
+      <view class="userAvatar">
+        <open-data type="userAvatarUrl"></open-data>
+      </view>
+
+      <!-- Txt -->
+      <view class="userInfoTxt">
+        <!-- 姓名 -->
+        <view class="userName">
+          <open-data type="userNickName"></open-data>
+        </view>
+        <!-- 下 -->
+        <view class="userAcademy">
+          <view class="guestAcademy">感谢您使用'饭吧'(●ˇ∀ˇ●)</view>
+        </view>
+      </view>
+    </view>
+    <!-- 上部Dialog -->
+    <view class="userInfoDialog">
+      <block wx:for="{{list_top}}" wx:key="index">
+        <template is="listtop_item" data="{{item}}">
+        </template>
+      </block>
+    </view>
+  </view>
+  <!--  关于我们...Dialog -->
+  <view class="more">
+    <block wx:for="{{list}}" wx:key="index">
+      <template is="navigate_item" data="{{item, right:'/images/tips/right.png'}}"></template>
+    </block>
+  </view> 
+</view>
+
+
+<view class="icon">！！受相关政策影响，已停止获取用户名和头像相关功能</view>

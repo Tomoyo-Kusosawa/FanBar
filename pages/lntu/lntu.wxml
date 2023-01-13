@@ -1,0 +1,47 @@
+<!--pages/Second/Second.wxml-->
+
+<view class="userinfo">  
+    <view class="namel">   
+      <text class="userinfo-avatar">{{Path}}</text>  
+    </view> 
+  <view class="name">   
+     <text class="gu"bindtap='guess'>{{title}}</text>  
+
+  </view>
+
+ </view>
+<view class="choose">
+<text class="choose_text">现在将从</text>
+ <button class="bt_2" bindtap="handleShowAction" size="mini" >{{diname}}</button>
+ <text class="choose_text">中进行抽选</text>
+ </view>
+
+
+<view class="title">
+<text  >\n来一杯"随便"奶茶</text>
+</view>
+<view>
+
+<button class="bt_connect" hover-class="hover-class-1" bindtap="naicha1" size="mini">壹丰茶饮</button>
+<button class="bt_connect" hover-class="hover-class-1" bindtap="naicha2" size="mini">蜜雪冰城</button>
+<button class="bt_connect" hover-class="hover-class-1" bindtap="naicha3" size="mini">飞扬炽茶</button>
+<button class="bt_connect" hover-class="hover-class-1" bindtap="naicha4" size="mini">7果贡茶</button>
+<button class="bt_connect" hover-class="hover-class-1" bindtap="naicha5" size="mini">甜啦啦</button>
+<button class="bt_connect" hover-class="hover-class-1" bindtap="naicha6" size="mini">茶鲜生</button>
+<button class="bt_connect" hover-class="hover-class-1" bindtap="useful" size="mini">如何使用</button>
+
+</view>
+<view class="countdown">
+	<block wx:for="{{timeList}}" wx:key="index">
+		<view class="item">
+			{{item.title}}：
+			<view class="txt-time">{{item.time.hou}}</view>:
+			<view class="txt-time">{{item.time.min}}</view>:
+			<view class="txt-time">{{item.time.sec}}</view>
+		</view>
+	</block>
+</view>
+<text>\n</text>
+<view class="adContainer">
+  <ad unit-id="adunit-46f7ff4434487aa0" bindload="adLoad" binderror="adError" bindclose="adClose" ad-intervals="30"></ad>
+</view>

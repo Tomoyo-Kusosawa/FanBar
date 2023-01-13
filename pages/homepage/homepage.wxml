@@ -1,0 +1,34 @@
+<!--miniprogram/pages/lunbo/lunbo.wxml-->
+<view>
+  <view class="lb_swiper">
+    <swiper style='height:{{Hei}};position:relative' indicator-dots="true" circular="true"
+     current="{{bannerCurrent}}" bindchange="bannerChange"
+      autoplay="true" interval="{{interval}}" duration="{{duration}}">
+      <block wx:for="{{background}}" wx:key="*this">
+        <swiper-item>
+          <image mode="widthFix" bindload='imgH' src="{{item.url}}" class="slide-image {{bannerCurrent==index?'slide-active':''}}" style="transition: all 1s"></image>
+          <view style="position:absolute;bottom:94rpx;left:30rpx;width:100%">
+            <text style="color:white">{{item.title}}</text>
+          </view>
+        </swiper-item>
+      </block>
+    </swiper>
+    <view class="top">
+  <view class="notification_bar">
+    <image class="bar_left" src="/images/notice.png" />
+    <view class="bar_text" animation="{{animationData}}">{{content}}</view>
+</view>
+
+    </view>
+    <view class="top">
+    </view>
+    <view class="menu-bannner">
+    <image class="menu-card" src="/images/tips/add1.png"bindtap="goTo1"></image>
+    </view>
+    <view class ="banner-class">
+<image class="banner"src="/images/tips/ad3.png" bindtap="goTo3"></image>
+<image class="banner"src="/images/fantime.png" bindtap="goTo4"></image>
+<image class="banner"src="/images/tips/future.jpg" bindtap="goTo5"></image>
+</view>
+  </view>
+</view>

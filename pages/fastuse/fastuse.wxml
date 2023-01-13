@@ -1,0 +1,58 @@
+
+<!-- 筛选和其他 --> 
+<view class="sreenBigBox">
+  <view class="sreenBox">
+    <view class="sreenItems">
+      <view class='sreen ' bindtap="sreenShow">筛选<image class='head {{sreenShow&&"rotating"}}' src="/images/tips/79.png"/></view>
+      <view class="sort" bindtap="showModal">新手教学<image class='head {{sortShow&&"rotating"}}' src="/images/tips/new.png"/></view>
+    </view>
+  </view>
+  
+    <!-- 下拉框 -->
+<view class="sreenConainer" style="height:{{sreenShow?2000:0}}rpx">
+  <view class="chooseBox">
+    <scroll-view  class="typeBox">
+      <view class="typeItems" wx:for="{{typeItems}}" wx:key="*this"
+        bindtap="chooseType" data-index="{{index}}">
+        <text class="typeItem {{index===typeCurrentIndex?'typeItemAdd':''}}">{{item}}</text>
+      </view>
+    </scroll-view>
+    <scroll-view class="chooseItems" scroll-y> 
+             <block wx:for="{{chooseItems[typeCurrentIndex]}}" wx:key="key">
+               <view class='ItemLabel {{item.selected===true?"choosing":""}}' data-value="{{item.name}}" bindtap="chooseItem" checked="{{item.selected}}" data-index="{{index}}">
+                {{item.name}}                                  
+               </view>
+             </block>
+    </scroll-view>
+  </view>
+   <view class="buttonConainer">
+     <button class="cancel" size="mini" bindtap="cancel">取  消</button>
+     <button class="clear" size="mini" bindtap="clear">报错</button>
+     <button class="confirm"  size="mini" bindtap="confirm">确  认</button>
+   </view>
+   <view style="width: 100%;"/>
+   <view class='mask' v-if="{{flag}}" bindtap="mask"></view>
+</view>
+<view class="sreenConainer" style="height:{{sortShow?1000:0}}rpx">  
+</view>
+</view>
+<!-- 列表 -->
+<view class="bianheng">
+<button class="article-block" hover-class="hover-class-1" wx:for="{{ ArticleLists }}" wx:key="index" bindtap="copybv" data-bv="{{ item.bv}}">
+<image class="article-image" src="{{item.bimage}}"></image>
+    <view class="article-text">
+      <view class="article-title">{{ item.title }}</view>
+  </view>
+</button>
+</view>
+
+
+
+<view>
+  <view class="btn" bindtap="gotop">
+  <text class="btn-gotop" >顶端</text>
+  </view>
+</view>
+
+
+

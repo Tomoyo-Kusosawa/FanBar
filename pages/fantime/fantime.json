@@ -1,0 +1,6 @@
+{
+  "navigationBarBackgroundColor": "#fff",
+  "navigationBarTitleText": "FanTime",
+  "navigationBarTextStyle": "black",
+  "enablePullDownRefresh": true
+}

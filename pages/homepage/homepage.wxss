@@ -1,0 +1,95 @@
+page{
+  background-color: #e2f2fc;
+}
+.top{
+  margin-top:5rpx ;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10rpx;
+}
+/* miniprogram/pages/lunbo/lunbo.wxss */
+.lb_swiper{
+
+  padding: 4%;
+}
+
+
+.lb_swiper .wx-swiper-dot{
+  width: 8rpx;
+  height: 8rpx;
+  border-radius:3rpx;
+  background: #ccc;
+}
+.lb_swiper .wx-swiper-dot-active{
+  width: 26rpx;
+  border-radius:10rpx;
+  background: rgba(236, 28, 28, 0.801);
+}
+
+ 
+.slide-image{
+  width:100%;
+  height:100%;
+  transform: scale(0.6,0.6);
+  border-radius:10rpx;
+  overflow: hidden;
+}
+.slide-active{
+  transform: scale(1,1);
+}
+
+.bt_2{
+  margin-top: 10rpx;
+  background: linear-gradient(to right, #ead6ee, #a0f1ea); 
+  color:rgb(0, 0, 0);
+}
+.banner-class{
+  display: flex;
+  box-sizing: border-box;
+
+  width: 100%;
+  justify-content: space-around;
+}
+.banner{
+  width: 216rpx;
+  height: 160rpx;
+  box-shadow: 0px 0px 8px rgb(0, 0, 0,0.1);
+  border-radius: 16rpx;
+}
+.menu-banner{
+  display: flex;
+  width: 100%;
+  padding:0 30rpx;
+  box-sizing: border-box;
+}
+.menu-card{
+  width: 688rpx;
+  height:340rpx;
+  box-shadow: 0px 0px 8px rgb(0, 0, 0,0.1);
+  border-radius: 16rpx;
+  margin-bottom:16rpx ;
+}
+
+.notification_bar {
+  top: 0;
+  width: 100%;
+  z-index: 999;
+  display: flex;
+  align-items: center;
+  padding: 0 30rpx;
+  height: 50rpx;
+  overflow: hidden;
+  background: #fcdada;
+}
+
+.bar_left {
+  width: 27rpx;
+  height: 25rpx;
+}
+
+.bar_text {
+  margin-left: 12rpx;
+  font-size: 12px;
+  color: #000000;
+}
